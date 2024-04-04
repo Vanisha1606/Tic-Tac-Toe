@@ -1,0 +1,101 @@
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 8vmin;
+  color: black;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.7vmin;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; 
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  background-color: palevioletred;
+  border-radius: 10px;
+  box-shadow: 0px 0px 60px rgb(231, 169, 231);
+  border: none;
+  font-size: 9vmin;
+  text-align: center;
+  background-color: palevioletred;
+  color: black;
+}
+
+#reset-btn {
+  height: 6vmin;
+  width: 18vmin;
+  font-size: 2.5vmin;
+  position: absolute; 
+  bottom: 2rem; 
+  left: calc(50% - 9vmin); 
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 60px rgb(231, 169, 231);
+  border: none;
+  color: palevioletred;
+}
+
+#new-btn {
+  height: 8vmin;
+  width: 22vmin;
+  font-size: 2.5vmin;
+  position: relative;
+  left: 0px;
+  bottom: 50px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 60px rgb(231, 169, 231);
+  border: none;
+  color: palevioletred;
+}
+
+#msg {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vmin;
+  color: rgb(184, 40, 88);
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+.winner-video {
+    width: 40%; /* Adjust width as needed */
+    max-height: 30vh; /* Limit maximum height */
+    border-radius: 10px; /* Apply border-radius if needed */
+  }
