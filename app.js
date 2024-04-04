@@ -4,6 +4,7 @@ let newgamebtn=document.querySelector("#new-btn");
 let msgcontainer=document.querySelector(".msg-container");
 let msg=document.querySelector("#msg");
 let turn0=true;
+let clicks=new Audio("click.wav");
 
 const winpatterns=[
     [0,1,2],
@@ -26,9 +27,11 @@ boxes.forEach((box) => {
     box.addEventListener("click",() => {
        if(turn0){ //PLAYER O
         box.innerText="O";
+        clicks.play();
         turn0=false;
-       }
-       else{ // PLAYER X
+    }
+    else{ // PLAYER X
+        clicks.play();
         box.innerText="X";
         turn0=true;
        }
@@ -58,7 +61,6 @@ const showwinner =(winner)=>{
     video.src = "cat.mp4";
     video.controls = true; // Add controls to the video player
     video.classList.add("winner-video");
-
     // Append the video to the message container
     msgcontainer.appendChild(video);
     disableboxes();
